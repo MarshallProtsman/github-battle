@@ -68,6 +68,7 @@ function ReposGrid({ repos }) {
           forks,
           open_issues
         } = repo;
+        console.log(`repos[0] >>>> ${repos[0]}`)
         const { login, avatar_url } = owner;
 
         return (
@@ -80,7 +81,7 @@ function ReposGrid({ repos }) {
             />
             <h2 className="center-text">
               <a className="link" href={html_url}>
-                {login}
+                {name}
               </a>
             </h2>
             <ul className="card-list">
